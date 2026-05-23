@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: notificacao-service
+
+  rabbitmq:
+    template:
+      exchange: pedidos.v1.pedido-criado
+    host: localhost
+    username: rabbitmq
+    password: rabbitmq
+    port: 5672
+    queue:
+      name: pedidos.v1.pedido-criado.gerar-notificacao

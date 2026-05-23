@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: pedidos-api
+
+  rabbitmq:
+    template:
+      exchange: pedidos.v1.pedido-criado
+    host: localhost
+    username: rabbitmq
+    password: rabbitmq
+    port: 5672
+
+springdoc:
+  swagger-ui:
+    path: /api-docs.html
+  api-docs:
+    path: /api-docs
+  packages-to-scan: pedidos_api.controller
